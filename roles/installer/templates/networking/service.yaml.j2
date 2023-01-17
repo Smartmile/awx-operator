@@ -30,7 +30,7 @@ spec:
       targetPort: 8052
       name: http
 {% endif %}
-{% if ingress_type | lower == 'route' and route_tls_termination_mechanism | lower == 'passthrough' %}
+{% if route_tls_termination_mechanism | lower == 'passthrough' %}
     - port: 443
       protocol: TCP
       targetPort: 8053
