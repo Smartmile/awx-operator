@@ -17,9 +17,9 @@ jobs:
         run: |
           IMG=awx-operator:devel make docker-build
 
-      - name: Push To Quay
-        uses: redhat-actions/push-to-registry@v2.1.1
+      - name: Push To GCR
+        uses: RaccoonDev/push-docker-gcr@v1
         with:
-          image: awx-operator
-          tags: devel
-          registry: eu.gcr.io/vaz-dev4e2f30b1/
+          image_name: awx-operator
+          image_tag: devel
+          gcr_host: eu.gcr.io/vaz-dev4e2f30b1/
