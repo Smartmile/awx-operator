@@ -287,13 +287,11 @@ spec:
         - urn:alm:descriptor:com.tectonic.ui:advanced
         - urn:alm:descriptor:com.tectonic.ui:select:Edge
         - urn:alm:descriptor:com.tectonic.ui:select:Passthrough
-        - urn:alm:descriptor:com.tectonic.ui:fieldDependency:ingress_type:Route
       - displayName: Route TLS Credential Secret
         path: route_tls_secret
         x-descriptors:
         - urn:alm:descriptor:com.tectonic.ui:advanced
         - urn:alm:descriptor:io.kubernetes:Secret
-        - urn:alm:descriptor:com.tectonic.ui:fieldDependency:ingress_type:Route
       - displayName: Image Pull Policy
         path: image_pull_policy
         x-descriptors:
