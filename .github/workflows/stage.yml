@@ -55,9 +55,8 @@ jobs:
 
       - name: Log in to GHCR
         run: |
-          echo ${{ secrets.GCLOUD_SERVICE_KEY }} > account.json
-          docker login -u _json_key -p "$(cat account.json)" https://eu.gcr.io
-
+          echo ${{ secrets.GCLOUD_SERVICE_KEY }} > account.json; docker login -u _json_key -p "$(cat account.json)" https://eu.gcr.io
+          
       - name: Build and stage awx-operator
         working-directory: awx-operator
         run: |
