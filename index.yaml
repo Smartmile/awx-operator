@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   awx-operator:
   - apiVersion: v2
-    appVersion: 1.1.5-custom
-    created: "2023-01-18T11:46:44.205924286Z"
+    appVersion: 1.1.6-custom
+    created: "2023-01-18T12:39:37.212675766Z"
     description: A Helm chart for the AWX Operator
-    digest: 062365dc07bb05b4e5bf798dda23f8f166d99ab081956c4c54a44ed295312cb5
+    digest: e50cd92bc17461d7310cc66fb7155d98c679a82e1c9d22c2aab2a448ef42dc6b
     name: awx-operator
     type: application
     urls:
-    - https://github.com/Smartmile/awx-operator/releases/download/1.1.5-custom/awx-operator-1.1.5-custom.tgz
-    version: 1.1.5-custom
-generated: "2023-01-18T11:46:44.205933887Z"
+    - https://github.com/Smartmile/awx-operator/releases/download/1.1.6-custom/awx-operator-1.1.6-custom.tgz
+    version: 1.1.6-custom
+generated: "2023-01-18T12:39:37.212691067Z"
