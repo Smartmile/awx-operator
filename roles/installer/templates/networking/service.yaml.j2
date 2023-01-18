@@ -55,6 +55,9 @@ spec:
   type: NodePort
 {% elif service_type | lower == "loadbalancer" %}
   type: LoadBalancer
+  {% if loadbalancer_ip %}
+  loadBalancerIP: {{ loadbalancer_ip }}
+  {% endif %}
 {% else %}
   type: ClusterIP
 {% endif %}
